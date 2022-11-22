@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <header>
+	<a class="clearfix" href="https://www.ycce.edu" target="blank">
+        	<img src="ycce.jpg" class="center" class="img-responsive">
+        </a>
+    </header>
+
+    <style>
+        body,
+        html {
+            height: 100%;
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        * {
+            box-sizing: border-box;
+        }
+	
+	.center {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 50%;
+        }
+        
+        .bg-image {
+            background-image: url("web-design-background.png");
+            
+            height: 100%;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        
+        .bg-text {
+            background-color: rgb(0, 0, 0);
+            background-color: rgba(0, 0, 0, 0.4);
+            color: white;
+            font-weight: bold;
+            border: 3px solid #f1f1f1;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 2;
+            width: 80%;
+            padding: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="bg-image"></div>
+
+    <div class="bg-text">
+        <h1>Generate Notice</h1>
+        <h2>Are you a Student or a Teacher? </h2>
+        <form>
+            <input type="radio" id="student" name="categorie" value="HTML">
+            <label for="student">Student</label><br>
+            <script>
+                document.getElementById("student").addEventListener("click", redirectFunction);
+
+                function redirectFunction() {
+                    window.location.href = "loginStudent.html";
+                }
+            </script>
+            <input type="radio" id="teacher" name="categorie" value="CSS">
+            <label for="teacher">Teacher</label><br>
+            <script>
+                document.getElementById("teacher").addEventListener("click", redirectFunction);
+
+                function redirectFunction() {
+                    window.location.href = "loginTeacher.html";
+                }
+            </script>
+        </form>
+
+    </div>
+
+    
+
+</body>
+
+</html>

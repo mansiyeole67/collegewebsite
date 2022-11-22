@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        h1 {
+            font-family:'Times New Roman', Times, serif;
+
+        }
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color:rgb(142, 240, 197)
+        }
+        
+        
+    
+        
+        input[type=text],
+        input[type=password] {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+        }
+        
+        button {
+             background-color:#4188b4;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+        }
+        
+        button:hover {
+            opacity: 0.4;
+        }
+        
+        .cancelbtn {
+            width: auto;
+            padding: 10px 18px;
+            background-color: #cf9d9a;
+        }
+        
+        .imgcontainer {
+            text-align: center;
+            margin: 24px 0 12px 0;
+        }
+        
+        img.avatar {
+            width: 30%;
+            border-radius: 60%;
+        }
+        
+        .container {
+            position :absolute;
+            left:33%;
+            padding: 16px;
+            background-color: white;
+            width: 300px;
+            border: 7px solid rgb(126, 221, 192);
+            padding: 50px;
+            margin: 20px;
+        }
+        
+        span.psw {
+            float: left;
+            padding-top: 16px;
+        }
+        
+        @media screen and (max-width: 300px) {
+            span.psw {
+                display: block;
+                float: none;
+            }
+            .cancelbtn {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Login as Teacher</h1>
+
+    <form action="loginTeacher.php" method="post">
+        <div class="imgcontainer">
+            <img src="downloadS6.jpg" alt="Teacher" class="avatar">
+        </div>
+
+        <div class="container">
+            <label for="username"><b>Username</b></label>
+            <input type="text" placeholder="Enter Username" name="username" required>
+
+            <label for="password"><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" name="password" required>
+
+            <button type="submit">Login</button>
+            <button type="button" class="cancelbtn"><a href="home.html">Cancel</a></button>
+            <p>forgot password?</p><span class="psw"><a href="registrationT.html">SignUp</a></span>
+
+            
+        </div>
+
+        
+    </form>
+
+</body>
+
+</html>
